@@ -1,0 +1,162 @@
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+xst -intstyle ise -ifn "D:/29-6-2023/UART/uart_rx.xst" -ofn "D:/29-6-2023/UART/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_cstn.ucf -p xc6slx9-tqg144-2 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf uart_cstn.ucf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 

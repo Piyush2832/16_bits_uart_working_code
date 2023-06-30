@@ -1,0 +1,44 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jun 30 16:59:09 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_Rx_Byte<0>" LOCATE = SITE "P16" LEVEL 1;
+COMP "o_Rx_Byte<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "o_Rx_Byte<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "o_Rx_Byte<3>" LOCATE = SITE "P11" LEVEL 1;
+COMP "o_Rx_Byte<4>" LOCATE = SITE "P9" LEVEL 1;
+COMP "o_Rx_Byte<5>" LOCATE = SITE "P8" LEVEL 1;
+COMP "o_Rx_Byte<6>" LOCATE = SITE "P6" LEVEL 1;
+COMP "o_Rx_Byte<7>" LOCATE = SITE "P5" LEVEL 1;
+COMP "o_Rx_Byte<8>" LOCATE = SITE "P1" LEVEL 1;
+COMP "o_Rx_Byte<9>" LOCATE = SITE "P2" LEVEL 1;
+COMP "o_Rx_Byte<10>" LOCATE = SITE "P143" LEVEL 1;
+COMP "o_Rx_Byte<11>" LOCATE = SITE "P144" LEVEL 1;
+COMP "o_Rx_Byte<12>" LOCATE = SITE "P141" LEVEL 1;
+COMP "o_Rx_Byte<20>" LOCATE = SITE "P131" LEVEL 1;
+COMP "o_Rx_Byte<13>" LOCATE = SITE "P142" LEVEL 1;
+COMP "o_Rx_Byte<21>" LOCATE = SITE "P132" LEVEL 1;
+COMP "o_Rx_Byte<14>" LOCATE = SITE "P139" LEVEL 1;
+COMP "o_Rx_Byte<22>" LOCATE = SITE "P126" LEVEL 1;
+COMP "o_Rx_Byte<30>" LOCATE = SITE "P116" LEVEL 1;
+COMP "o_Rx_Byte<15>" LOCATE = SITE "P140" LEVEL 1;
+COMP "o_Rx_Byte<23>" LOCATE = SITE "P127" LEVEL 1;
+COMP "o_Rx_Byte<31>" LOCATE = SITE "P117" LEVEL 1;
+COMP "o_Rx_Byte<16>" LOCATE = SITE "P137" LEVEL 1;
+COMP "o_Rx_Byte<24>" LOCATE = SITE "P123" LEVEL 1;
+COMP "o_Rx_Byte<17>" LOCATE = SITE "P138" LEVEL 1;
+COMP "o_Rx_Byte<25>" LOCATE = SITE "P124" LEVEL 1;
+COMP "o_Rx_Byte<18>" LOCATE = SITE "P133" LEVEL 1;
+COMP "o_Rx_Byte<26>" LOCATE = SITE "P120" LEVEL 1;
+COMP "o_Rx_Byte<19>" LOCATE = SITE "P134" LEVEL 1;
+COMP "o_Rx_Byte<27>" LOCATE = SITE "P121" LEVEL 1;
+COMP "o_Rx_Byte<28>" LOCATE = SITE "P118" LEVEL 1;
+COMP "o_Rx_Byte<29>" LOCATE = SITE "P119" LEVEL 1;
+COMP "i_Clock" LOCATE = SITE "P87" LEVEL 1;
+COMP "i_Rx_Serial" LOCATE = SITE "P22" LEVEL 1;
+COMP "square_wave" LOCATE = SITE "P24" LEVEL 1;
+COMP "pin1" LOCATE = SITE "P26" LEVEL 1;
+COMP "pin2" LOCATE = SITE "P27" LEVEL 1;
+SCHEMATIC END;
+
