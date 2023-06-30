@@ -1,0 +1,88 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf -ucf
+cstn_16hbits.ucf
+
+Design file:              uart_rx.ncd
+Physical constraint file: uart_rx.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock i_Clock
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+i_Rx_Serial |    0.874(R)|      SLOW  |    0.529(R)|      SLOW  |i_Clock_BUFGP     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock i_Clock to Pad
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+o_Rx_Byte<0> |        12.934(R)|      SLOW  |         6.248(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<1> |        11.798(R)|      SLOW  |         5.662(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<2> |        12.393(R)|      SLOW  |         6.015(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<3> |        11.052(R)|      SLOW  |         5.222(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<4> |        11.760(R)|      SLOW  |         5.513(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<5> |        10.901(R)|      SLOW  |         5.033(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<6> |        11.655(R)|      SLOW  |         5.498(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<7> |        11.093(R)|      SLOW  |         5.162(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<8> |        12.604(R)|      SLOW  |         6.055(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<9> |        13.143(R)|      SLOW  |         6.384(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<10>|        12.739(R)|      SLOW  |         6.186(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<11>|        13.181(R)|      SLOW  |         6.418(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<12>|        12.257(R)|      SLOW  |         5.846(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<13>|        12.033(R)|      SLOW  |         5.731(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<14>|        12.147(R)|      SLOW  |         5.773(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+o_Rx_Byte<15>|        11.855(R)|      SLOW  |         5.550(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+pin1         |         9.670(R)|      SLOW  |         4.285(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+pin2         |         9.843(R)|      SLOW  |         4.372(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+square_wave  |         9.804(R)|      SLOW  |         4.353(R)|      FAST  |i_Clock_BUFGP     |   0.000|
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock i_Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_Clock        |   65.742|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Jun 30 16:25:53 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 176 MB
+
+
+

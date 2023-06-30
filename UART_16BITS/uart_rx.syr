@@ -1,0 +1,755 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: uart_rx.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "uart_rx.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "uart_rx"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : uart_rx
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" into library work
+Parsing module <uart_rx>.
+INFO:HDLCompiler:693 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 24. parameter declaration becomes local in uart_rx with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 25. parameter declaration becomes local in uart_rx with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 26. parameter declaration becomes local in uart_rx with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 27. parameter declaration becomes local in uart_rx with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 28. parameter declaration becomes local in uart_rx with formal parameter declaration list
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <uart_rx>.
+WARNING:HDLCompiler:872 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 45: Using initial value of distZ since it is never assigned
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 55: Result of 59-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 73: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 92: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 141: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 152: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 163: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 170: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 177: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\30-06-2023\UART_16BITS\GIT_16BITS.v" Line 194: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "D:\30-06-2023\UART_16BITS\GIT_16BITS.v".
+        CLKS_PER_BIT = 104
+    Register <rpm> equivalent to <o_Rx_Byte> has been removed
+    Found 1-bit register for signal <r_Rx_Data>.
+    Found 16-bit register for signal <o_Rx_Byte>.
+    Found 24-bit register for signal <counter>.
+    Found 1-bit register for signal <toggle>.
+    Found 1-bit register for signal <pin1>.
+    Found 1-bit register for signal <pin2>.
+    Found 16-bit register for signal <distB>.
+    Found 1-bit register for signal <stop>.
+    Found 1-bit register for signal <square_wave>.
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 16-bit register for signal <r_Clock_Count>.
+    Found 1-bit register for signal <r_Rx_Byte<7>>.
+    Found 1-bit register for signal <r_Rx_Byte<6>>.
+    Found 1-bit register for signal <r_Rx_Byte<5>>.
+    Found 1-bit register for signal <r_Rx_Byte<4>>.
+    Found 1-bit register for signal <r_Rx_Byte<3>>.
+    Found 1-bit register for signal <r_Rx_Byte<2>>.
+    Found 1-bit register for signal <r_Rx_Byte<1>>.
+    Found 1-bit register for signal <r_Rx_Byte<0>>.
+    Found 5-bit register for signal <r_Bit_Index>.
+    Found 8-bit register for signal <first_8bit>.
+    Found 8-bit register for signal <data_check>.
+    Found 8-bit register for signal <second_8bit>.
+    Found finite state machine <FSM_0> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | i_Clock (rising_edge)                          |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 24-bit adder for signal <counter[23]_GND_1_o_add_4_OUT> created at line 73.
+    Found 16-bit adder for signal <distB[15]_GND_1_o_add_8_OUT> created at line 92.
+    Found 5-bit adder for signal <r_Bit_Index[4]_GND_1_o_add_34_OUT> created at line 163.
+    Found 16-bit adder for signal <r_Clock_Count[15]_GND_1_o_add_54_OUT> created at line 194.
+    Found 24-bit comparator equal for signal <counter[23]_store[23]_equal_6_o> created at line 74
+    Found 5-bit comparator lessequal for signal <n0044> created at line 158
+    Found 5-bit comparator greater for signal <r_Bit_Index[4]_GND_1_o_LessThan_34_o> created at line 161
+    Found 16-bit comparator greater for signal <r_Clock_Count[15]_GND_1_o_LessThan_30_o> created at line 192
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 115 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_rx> synthesized.
+
+Synthesizing Unit <div_21u_16u>.
+    Related source file is "".
+    Found 36-bit adder for signal <n1381> created at line 0.
+    Found 36-bit adder for signal <GND_2_o_b[15]_add_3_OUT> created at line 0.
+    Found 35-bit adder for signal <n1385> created at line 0.
+    Found 35-bit adder for signal <GND_2_o_b[15]_add_5_OUT> created at line 0.
+    Found 34-bit adder for signal <n1389> created at line 0.
+    Found 34-bit adder for signal <GND_2_o_b[15]_add_7_OUT> created at line 0.
+    Found 33-bit adder for signal <n1393> created at line 0.
+    Found 33-bit adder for signal <GND_2_o_b[15]_add_9_OUT> created at line 0.
+    Found 32-bit adder for signal <n1397> created at line 0.
+    Found 32-bit adder for signal <GND_2_o_b[15]_add_11_OUT> created at line 0.
+    Found 31-bit adder for signal <n1401> created at line 0.
+    Found 31-bit adder for signal <GND_2_o_b[15]_add_13_OUT> created at line 0.
+    Found 30-bit adder for signal <n1405> created at line 0.
+    Found 30-bit adder for signal <GND_2_o_b[15]_add_15_OUT> created at line 0.
+    Found 29-bit adder for signal <n1409> created at line 0.
+    Found 29-bit adder for signal <GND_2_o_b[15]_add_17_OUT> created at line 0.
+    Found 28-bit adder for signal <n1413> created at line 0.
+    Found 28-bit adder for signal <GND_2_o_b[15]_add_19_OUT> created at line 0.
+    Found 27-bit adder for signal <n1417> created at line 0.
+    Found 27-bit adder for signal <GND_2_o_b[15]_add_21_OUT> created at line 0.
+    Found 26-bit adder for signal <n1421> created at line 0.
+    Found 26-bit adder for signal <GND_2_o_b[15]_add_23_OUT> created at line 0.
+    Found 25-bit adder for signal <n1425> created at line 0.
+    Found 25-bit adder for signal <GND_2_o_b[15]_add_25_OUT> created at line 0.
+    Found 24-bit adder for signal <n1429> created at line 0.
+    Found 24-bit adder for signal <GND_2_o_b[15]_add_27_OUT> created at line 0.
+    Found 23-bit adder for signal <n1433> created at line 0.
+    Found 23-bit adder for signal <GND_2_o_b[15]_add_29_OUT> created at line 0.
+    Found 22-bit adder for signal <n1437> created at line 0.
+    Found 22-bit adder for signal <GND_2_o_b[15]_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <n1441> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[15]_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <n1445> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_2_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <n1449> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_2_o_add_37_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <n1453> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_2_o_add_39_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <n1457> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_2_o_add_41_OUT[20:0]> created at line 0.
+    Found 37-bit adder for signal <GND_2_o_b[15]_add_1_OUT> created at line 0.
+    Found 37-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Summary:
+	inferred  41 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 381 Multiplexer(s).
+Unit <div_21u_16u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 45
+ 16-bit adder                                          : 2
+ 21-bit adder                                          : 10
+ 22-bit adder                                          : 2
+ 23-bit adder                                          : 2
+ 24-bit adder                                          : 3
+ 25-bit adder                                          : 2
+ 26-bit adder                                          : 2
+ 27-bit adder                                          : 2
+ 28-bit adder                                          : 2
+ 29-bit adder                                          : 2
+ 30-bit adder                                          : 2
+ 31-bit adder                                          : 2
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 2
+ 34-bit adder                                          : 2
+ 35-bit adder                                          : 2
+ 36-bit adder                                          : 2
+ 37-bit adder                                          : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 22
+ 1-bit register                                        : 14
+ 16-bit register                                       : 3
+ 24-bit register                                       : 1
+ 5-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 26
+ 16-bit comparator greater                             : 1
+ 21-bit comparator lessequal                           : 6
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator equal                               : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 388
+ 1-bit 2-to-1 multiplexer                              : 379
+ 16-bit 2-to-1 multiplexer                             : 4
+ 21-bit 2-to-1 multiplexer                             : 3
+ 5-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <data_check_1> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_2> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_3> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_4> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_5> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_6> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_7> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <uart_rx>.
+The following registers are absorbed into counter <distB>: 1 register on signal <distB>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <uart_rx> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 23
+ 16-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 21-bit adder carry in                                 : 20
+ 5-bit adder                                           : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+# Comparators                                          : 26
+ 16-bit comparator greater                             : 1
+ 21-bit comparator lessequal                           : 6
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator equal                               : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 388
+ 1-bit 2-to-1 multiplexer                              : 379
+ 16-bit 2-to-1 multiplexer                             : 4
+ 21-bit 2-to-1 multiplexer                             : 3
+ 5-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <data_check_1> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_2> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_3> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_4> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_5> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_6> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_check_7> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <r_SM_Main[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+
+Optimizing unit <uart_rx> ...
+WARNING:Xst:1293 - FF/Latch <r_Bit_Index_4> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_Bit_Index_4> has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <div_21u_16u> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block uart_rx, actual ratio is 15.
+FlipFlop o_Rx_Byte_0 has been replicated 3 time(s)
+FlipFlop o_Rx_Byte_1 has been replicated 3 time(s)
+FlipFlop o_Rx_Byte_10 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_11 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_12 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_13 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_14 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_15 has been replicated 3 time(s)
+FlipFlop o_Rx_Byte_2 has been replicated 3 time(s)
+FlipFlop o_Rx_Byte_3 has been replicated 3 time(s)
+FlipFlop o_Rx_Byte_4 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_5 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_6 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_7 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_8 has been replicated 2 time(s)
+FlipFlop o_Rx_Byte_9 has been replicated 3 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 148
+ Flip-Flops                                            : 148
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : uart_rx.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1452
+#      GND                         : 1
+#      INV                         : 22
+#      LUT1                        : 70
+#      LUT2                        : 9
+#      LUT3                        : 92
+#      LUT4                        : 238
+#      LUT5                        : 209
+#      LUT6                        : 178
+#      MUXCY                       : 381
+#      VCC                         : 1
+#      XORCY                       : 251
+# FlipFlops/Latches                : 148
+#      FD                          : 101
+#      FDE                         : 46
+#      FDRE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 1
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             148  out of  11440     1%  
+ Number of Slice LUTs:                  818  out of   5720    14%  
+    Number used as Logic:               818  out of   5720    14%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    896
+   Number with an unused Flip Flop:     748  out of    896    83%  
+   Number with an unused LUT:            78  out of    896     8%  
+   Number of fully used LUT-FF pairs:    70  out of    896     7%  
+   Number of unique control sets:        16
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    102    20%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+i_Clock                            | BUFGP                  | 148   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 68.508ns (Maximum Frequency: 14.597MHz)
+   Minimum input arrival time before clock: 2.083ns
+   Maximum output required time after clock: 5.397ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_Clock'
+  Clock period: 68.508ns (frequency: 14.597MHz)
+  Total number of paths / destination ports: 105182172035137070000000000000 / 194
+-------------------------------------------------------------------------
+Delay:               68.508ns (Levels of Logic = 120)
+  Source:            o_Rx_Byte_8_1 (FF)
+  Destination:       toggle (FF)
+  Source Clock:      i_Clock rising
+  Destination Clock: i_Clock rising
+
+  Data Path: o_Rx_Byte_8_1 to toggle
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   1.112  o_Rx_Byte_8_1 (o_Rx_Byte_8_1)
+     LUT5:I0->O            7   0.254   1.018  PWR_1_o_rpm[15]_div_1/o<20>211 (PWR_1_o_rpm[15]_div_1/o<18>11)
+     LUT6:I4->O            3   0.250   1.196  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_284_o1121 (PWR_1_o_rpm[15]_div_1/a[20]_GND_2_o_MUX_264_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_cy<3>)
+     MUXCY:CI->O          14   0.023   1.127  PWR_1_o_rpm[15]_div_1/Mcompar_o<17>_cy<4> (store<17>)
+     LUT4:I3->O            4   0.254   1.080  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_350_o1101 (PWR_1_o_rpm[15]_div_1/a[19]_GND_2_o_MUX_331_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_cy<3>)
+     MUXCY:CI->O          17   0.023   1.209  PWR_1_o_rpm[15]_div_1/Mcompar_o<16>_cy<4> (store<16>)
+     LUT6:I5->O            6   0.254   1.152  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_414_o1101 (PWR_1_o_rpm[15]_div_1/a[19]_GND_2_o_MUX_395_o)
+     LUT5:I1->O            1   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<15>_lut<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<15>_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<15>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<15>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<15>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<15>_cy<3>)
+     MUXCY:CI->O          24   0.023   1.380  PWR_1_o_rpm[15]_div_1/Mcompar_o<15>_cy<4> (store<15>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_476_o181 (PWR_1_o_rpm[15]_div_1/a[17]_GND_2_o_MUX_459_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<4>)
+     MUXCY:CI->O          30   0.023   1.487  PWR_1_o_rpm[15]_div_1/Mcompar_o<14>_cy<5> (store<14>)
+     LUT3:I2->O            3   0.254   1.196  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_536_o1121 (PWR_1_o_rpm[15]_div_1/a[20]_GND_2_o_MUX_516_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<13>_lutdi3 (PWR_1_o_rpm[15]_div_1/Mcompar_o<13>_lutdi3)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<13>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<13>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<13>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<13>_cy<4>)
+     MUXCY:CI->O          28   0.023   1.453  PWR_1_o_rpm[15]_div_1/Mcompar_o<13>_cy<5> (store<13>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_594_o161 (PWR_1_o_rpm[15]_div_1/a[15]_GND_2_o_MUX_579_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<4>)
+     MUXCY:CI->O          38   0.023   1.620  PWR_1_o_rpm[15]_div_1/Mcompar_o<12>_cy<5> (store<12>)
+     LUT6:I5->O            3   0.254   1.042  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_650_o151 (PWR_1_o_rpm[15]_div_1/a[14]_GND_2_o_MUX_636_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<4>)
+     MUXCY:CI->O          34   0.023   1.553  PWR_1_o_rpm[15]_div_1/Mcompar_o<11>_cy<5> (store<11>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_704_o141 (PWR_1_o_rpm[15]_div_1/a[13]_GND_2_o_MUX_691_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<5> (PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<5>)
+     MUXCY:CI->O          46   0.023   1.754  PWR_1_o_rpm[15]_div_1/Mcompar_o<10>_cy<6> (store<10>)
+     LUT3:I2->O            3   0.254   1.196  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_756_o1121 (PWR_1_o_rpm[15]_div_1/a[20]_GND_2_o_MUX_736_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<9>_lutdi5 (PWR_1_o_rpm[15]_div_1/Mcompar_o<9>_lutdi5)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<9>_cy<5> (PWR_1_o_rpm[15]_div_1/Mcompar_o<9>_cy<5>)
+     MUXCY:CI->O          40   0.023   1.654  PWR_1_o_rpm[15]_div_1/Mcompar_o<9>_cy<6> (store<9>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_806_o121 (PWR_1_o_rpm[15]_div_1/a[11]_GND_2_o_MUX_795_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<5> (PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<5>)
+     MUXCY:CI->O          54   0.023   1.852  PWR_1_o_rpm[15]_div_1/Mcompar_o<8>_cy<6> (store<8>)
+     LUT6:I5->O            3   0.254   1.042  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_854_o111 (PWR_1_o_rpm[15]_div_1/a[10]_GND_2_o_MUX_844_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<5> (PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<6> (PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<6>)
+     MUXCY:CI->O          46   0.023   1.754  PWR_1_o_rpm[15]_div_1/Mcompar_o<7>_cy<7> (store<7>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_900_o1201 (PWR_1_o_rpm[15]_div_1/a[9]_GND_2_o_MUX_891_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<5> (PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<6> (PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<6>)
+     MUXCY:CI->O          62   0.023   1.914  PWR_1_o_rpm[15]_div_1/Mcompar_o<6>_cy<7> (store<6>)
+     LUT6:I5->O            3   0.254   1.042  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_GND_2_o_MUX_944_o1191 (PWR_1_o_rpm[15]_div_1/a[8]_GND_2_o_MUX_936_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_lutdi1 (PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<1> (PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<2> (PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<3> (PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<4> (PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<5> (PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<6> (PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<6>)
+     MUXCY:CI->O          53   0.023   1.844  PWR_1_o_rpm[15]_div_1/Mcompar_o<5>_cy<7> (store<5>)
+     LUT5:I4->O            5   0.254   1.271  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_a[20]_MUX_986_o1101 (PWR_1_o_rpm[15]_div_1/a[19]_a[20]_MUX_967_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<4>_lutdi7 (PWR_1_o_rpm[15]_div_1/Mcompar_o<4>_lutdi7)
+     MUXCY:DI->O          71   0.181   1.984  PWR_1_o_rpm[15]_div_1/Mcompar_o<4>_cy<7> (store<4>)
+     LUT3:I2->O            4   0.254   1.234  PWR_1_o_rpm[15]_div_1/Mmux_a[0]_a[20]_MUX_1007_o191 (PWR_1_o_rpm[15]_div_1/a[18]_a[20]_MUX_989_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<3>_lutdi7 (PWR_1_o_rpm[15]_div_1/Mcompar_o<3>_lutdi7)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<3>_cy<7> (PWR_1_o_rpm[15]_div_1/Mcompar_o<3>_cy<7>)
+     MUXCY:CI->O          74   0.023   2.007  PWR_1_o_rpm[15]_div_1/Mcompar_o<3>_cy<8> (store<3>)
+     LUT5:I4->O            3   0.254   1.196  PWR_1_o_rpm[15]_div_1/Mmux_n145191 (PWR_1_o_rpm[15]_div_1/n1451<17>)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<2>_lutdi7 (PWR_1_o_rpm[15]_div_1/Mcompar_o<2>_lutdi7)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<2>_cy<7> (PWR_1_o_rpm[15]_div_1/Mcompar_o<2>_cy<7>)
+     MUXCY:CI->O          58   0.023   1.883  PWR_1_o_rpm[15]_div_1/Mcompar_o<2>_cy<8> (store<2>)
+     LUT5:I4->O            2   0.254   1.156  PWR_1_o_rpm[15]_div_1/Mmux_n145581 (PWR_1_o_rpm[15]_div_1/n1455<16>)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<1>_lutdi7 (PWR_1_o_rpm[15]_div_1/Mcompar_o<1>_lutdi7)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<1>_cy<7> (PWR_1_o_rpm[15]_div_1/Mcompar_o<1>_cy<7>)
+     MUXCY:CI->O          21   0.023   1.310  PWR_1_o_rpm[15]_div_1/Mcompar_o<1>_cy<8> (store<1>)
+     LUT5:I4->O            2   0.254   1.156  PWR_1_o_rpm[15]_div_1/Mmux_n137071 (PWR_1_o_rpm[15]_div_1/n1370<15>)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<0>_lutdi7 (PWR_1_o_rpm[15]_div_1/Mcompar_o<0>_lutdi7)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_rpm[15]_div_1/Mcompar_o<0>_cy<7> (PWR_1_o_rpm[15]_div_1/Mcompar_o<0>_cy<7>)
+     MUXCY:CI->O           1   0.235   0.682  PWR_1_o_rpm[15]_div_1/Mcompar_o<0>_cy<8> (store<0>)
+     LUT6:I5->O            1   0.254   0.000  Mcompar_counter[23]_store[23]_equal_6_o_lut<0> (Mcompar_counter[23]_store[23]_equal_6_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_counter[23]_store[23]_equal_6_o_cy<0> (Mcompar_counter[23]_store[23]_equal_6_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter[23]_store[23]_equal_6_o_cy<1> (Mcompar_counter[23]_store[23]_equal_6_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter[23]_store[23]_equal_6_o_cy<2> (Mcompar_counter[23]_store[23]_equal_6_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter[23]_store[23]_equal_6_o_cy<3> (Mcompar_counter[23]_store[23]_equal_6_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter[23]_store[23]_equal_6_o_cy<4> (Mcompar_counter[23]_store[23]_equal_6_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter[23]_store[23]_equal_6_o_cy<5> (Mcompar_counter[23]_store[23]_equal_6_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter[23]_store[23]_equal_6_o_cy<6> (Mcompar_counter[23]_store[23]_equal_6_o_cy<6>)
+     MUXCY:CI->O          43   0.023   1.704  Mcompar_counter[23]_store[23]_equal_6_o_cy<7> (counter[23]_store[23]_equal_6_o)
+     LUT2:I1->O            2   0.254   0.000  Mmux_toggle_toggle_MUX_1108_o11 (toggle_toggle_MUX_1108_o)
+     FDE:D                     0.074          toggle
+    ----------------------------------------
+    Total                     68.508ns (15.662ns logic, 52.846ns route)
+                                       (22.9% logic, 77.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_Clock'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 1)
+  Source:            i_Rx_Serial (PAD)
+  Destination:       r_Rx_Data (FF)
+  Destination Clock: i_Clock rising
+
+  Data Path: i_Rx_Serial to r_Rx_Data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  i_Rx_Serial_IBUF (i_Rx_Serial_IBUF)
+     FD:D                      0.074          r_Rx_Data
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_Clock'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              5.397ns (Levels of Logic = 1)
+  Source:            o_Rx_Byte_1 (FF)
+  Destination:       o_Rx_Byte<1> (PAD)
+  Source Clock:      i_Clock rising
+
+  Data Path: o_Rx_Byte_1 to o_Rx_Byte<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              68   0.525   1.960  o_Rx_Byte_1 (o_Rx_Byte_1)
+     OBUF:I->O                 2.912          o_Rx_Byte_1_OBUF (o_Rx_Byte<1>)
+    ----------------------------------------
+    Total                      5.397ns (3.437ns logic, 1.960ns route)
+                                       (63.7% logic, 36.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock i_Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_Clock        |   68.508|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.68 secs
+ 
+--> 
+
+Total memory usage is 230836 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
